@@ -1,1 +1,1 @@
-# Cypress_Automation_YT
+# Cypress_Automation_training
