@@ -24,5 +24,4 @@ class Login {
 }
 
 //Once the class is created, export it:
-
 export default Login;

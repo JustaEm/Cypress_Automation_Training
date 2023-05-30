@@ -1,6 +1,7 @@
+
 import Login from "../PageObjects/Login_PageObject2.js"
 
-describe('pom', () => {
+describe('Page Object Model', () => {
     // General approach
     it.skip('LoginTest', () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/")
