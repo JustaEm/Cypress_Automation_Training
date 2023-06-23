@@ -3,3 +3,5 @@ node_modules/
 /Cypress Folder Structure.PNG/
 /nth child  element selector.PNG/
 /Cypress iframes.txt/
+/cypress/screenshots/
+/cypress/videos/
