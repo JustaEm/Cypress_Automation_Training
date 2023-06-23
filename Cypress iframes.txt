@@ -1,0 +1,27 @@
+LABELS instead of values:
+<label for="checkbox-enhanced" class="ui-btn ui-corner-all ui-btn-inherit ui-btn-icon-left ui-checkbox-off" xpath="1">I agree</label>
+<input type="checkbox" name="checkbox-enhanced" id="checkbox-enhanced" data-enhanced="true" xpath="1">
+
+cy.contains('label', 'I agree').invoke('attr', 'for').then((forValue) => {
+  cy.get(`#${forValue}`).check();
+});
+......................................................................................................
+
+describe('Handling iframes', () => {
+
+    it('Validate user is able to write in the text area', () => {
+
+        cy.visit('https://the-internet.herokuapp.com/iframe');
+        cy.get('#mce_0_ifr').then(($iframe) => {
+
+            let iframeBody = $iframe.contents().find('body')
+            cy.wrap(iframeBody)
+                .clear()
+                .type('Welcome to cypress tutorial about handling iframes')
+                .type('{selectall}');
+                cy.get('[aria-label="Bold"]').click();
+
+        })
+
+    })
+})
